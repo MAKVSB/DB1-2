@@ -1,0 +1,229 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="932B083A-1BFA-C873-5CA3-C3876DEBC935" name="user">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>D232FB24-7EB2-F8F7-12BB-0DCC0826D3FA</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="userId" id="69A27850-0632-2F3F-E59F-709B331A660A">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>93D6CC29-AC73-F876-B582-4C07E1E3C7B3</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="firstName" id="709437FD-D9B0-5751-1630-0985FD9DBECA">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>5D1C878B-8267-7BF1-C721-EDAD11599A36</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastName" id="F040362E-8F44-F45F-1FA6-94CD6C16BF8C">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>4218AA5A-15C0-518E-4D12-571CE61F294E</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="893D3713-4A1A-0514-C253-733E5DEA2565">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>DE3D78BB-33B3-DF3D-48F5-A5E11F56D3F4</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>62</dataTypeSize>
+<ownDataTypeParameters>62,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="CD7FF5C5-18C1-88E7-1334-B1DBBA9BCBF8">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>BC33C699-0E1A-2178-438A-3A2573F4FC99</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="17A34A71-35B0-0B4C-21E6-3B15B9735EB4">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>1F891C38-D04F-C77E-8D2F-5B2C7F5DC5EE</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="59618101-F628-01E8-C7B2-37B66F53071B">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>45415298-FCEB-0882-1425-2ACFC7CF01D9</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="photoUrl" id="4537A4F8-9364-BDC0-D715-63BFBD21D123">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>F1AF5495-9E52-7310-CCE1-4BB84337D7E0</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="language" id="52775562-3DCF-CD39-C556-500B8FEF3B15">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>6D1C80BB-1ADF-B21F-4D8A-D9EC6E1AF27F</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role" id="2AE300DD-63AF-15FE-07DD-10ADFE1552D7">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>03C2E7DE-AE94-5AE8-22F3-54AF1556AF11</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="paid" id="128710C6-97D4-1B25-2D13-320639D137E3">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>3A08265C-C9CA-03C9-63B3-3794D392F4C5</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="registeredDate" id="AB7D7B00-E0E3-AD1E-5478-1D12132A1F3E">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>0F27DBB6-0537-119D-F60D-F858B311956B</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated" id="3456D0E1-6788-0998-6676-043028A1FC31">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>FEDDAB6D-5A46-C01A-F546-95FC052E8066</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastLogin" id="8E9C5179-EEA4-46C9-1025-9D29673312AF">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>0E01238C-16A5-332A-EF16-B2754C383833</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emailNotifications" id="1EBFAC36-232D-D18A-83BF-9D0B59C36110">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>04A5BEDF-9ACC-371F-13BE-B3BCF2AE3594</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emailMarketing" id="9A36F27A-3BFA-F6E2-F73E-41C3D9BF8FD9">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>1321A28D-045E-80B8-389B-6A0A752B0133</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prefferedStyle" id="1FAAF017-AF0D-2C76-BA48-9F6AA62067CC">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>66F1BFE1-FBDC-09A1-6EC1-A4A51719699E</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59D6FFD9-C070-6745-DFAF-CF323CDC53C6" name="user_PK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>2217F79A-2E7D-DD34-4DD6-3EEBF55AA048</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69A27850-0632-2F3F-E59F-709B331A660A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

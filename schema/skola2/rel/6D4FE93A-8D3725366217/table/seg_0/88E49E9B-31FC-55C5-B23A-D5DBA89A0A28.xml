@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88E49E9B-31FC-55C5-B23A-D5DBA89A0A28" name="anime">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>FBAB745A-DFF0-7600-52D4-0BDE349E6BC4</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="animeId" id="BFC99751-D288-5932-86D0-C4374EEFB602">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>678E941C-5864-29CE-2B4C-F7D32F65C3A3</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="65D3F6AC-A91D-C4CD-D44E-23F8C574CBCE">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>7D56509A-8580-DF67-D053-5D18D30E07E1</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="length" id="00D9AFA6-E135-4F8D-5186-64EDEEB168F5">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>6C0DE6A7-7D01-E11C-F040-153A606BF50B</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="episodeNumber" id="41EF9B1F-C25E-5395-D069-97D3B74CCB7D">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>AC1282DE-E804-BA08-B597-3565BAE1129E</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seriesNumber" id="924741DE-97C4-3ED2-B191-A1C6BA8ABBAA">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>E0C86C38-5DC5-7B68-FCA2-3733CFDEEFBA</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc" id="4E4BA826-811E-D0B8-ED3C-E4F3D4313F78">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>FF6D0C0B-3761-44F6-7EDB-7D24CFA4689C</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shortDesc" id="8CDB71F8-3E85-5023-4B7A-48A89DAC1724">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>15A9AC0B-B337-0D2B-6CE4-A6B91BE00683</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created" id="97D32130-18F1-165B-8D19-88D4A265E111">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>136328B0-4D3F-5F86-33B4-0DDF9CF29317</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated" id="B1BA22AE-4FC9-9B3C-34FE-68A768AC7DD1">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>171BCAF5-B717-E818-6E21-3D75F1FB81E6</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="viewCount" id="9CEEB3FE-3CC1-FD61-0C9F-B10BD711B57F">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>E816FCF5-36A0-DDB1-AAEE-EB3C961C331D</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="language" id="8A5D2205-4E0C-4EFD-FEB1-359CD0AD773D">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 17:01:07 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64A57B80-CA76-E429-52E5-0B243D95F183" name="anime_PK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>0C1E7396-A6EA-6269-EE7E-E3F2359A31F0</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFC99751-D288-5932-86D0-C4374EEFB602"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF1ABAF1-E52F-A918-43CB-288213959C6B" name="anime_author">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<ordsAlias>relation_79</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="animeId" id="F1A8F52A-ED56-CE81-A43D-11FACF627D53">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2879FDB-9582-0767-DE79-DC9FFA33A64E" referredColumn="BFC99751-D288-5932-86D0-C4374EEFB602"/>
+</associations>
+</Column>
+<Column name="authorId" id="1F5DA38F-35AA-47F5-6087-39FE00D1D912">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09765B05-E4D6-F617-6B96-32F6F91DD6B2" referredColumn="4BC2D5F7-5393-B492-BD20-A774CE225F1A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3577A375-0DC9-5887-2149-9956096AE0D4" name="Relation_79_PK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1A8F52A-ED56-CE81-A43D-11FACF627D53"/>
+<colUsage columnID="1F5DA38F-35AA-47F5-6087-39FE00D1D912"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD820F02-440D-73F2-6A7F-99B257F6D204" name="Relation_79_anime_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>F5E25080-FDAD-C7A5-EB17-A1239DB9BCAE</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1A8F52A-ED56-CE81-A43D-11FACF627D53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E45EBDB-E1ED-6163-74FB-2512CA258937" name="Relation_79_author_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>F5E25080-FDAD-C7A5-EB17-A1239DB9BCAE</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F5DA38F-35AA-47F5-6087-39FE00D1D912"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

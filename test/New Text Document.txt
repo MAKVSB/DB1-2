@@ -1,0 +1,116 @@
+use nhl
+go
+
+
+
+-------------------------------------------------- A
+
+-- Vypiste jména hráčů, kteří v každém roce ve kterém hráli minimálně jeden zápas, nastříleli alespoň 15 gólů.
+with tab as (
+	select gss.player_id, pi.firstName, pi.lastName, year(g.date_time_GMT) playyear, sum(gss.goals) player_year_goals
+	from game_skater_stats gss
+	join game g on g.game_id = gss.game_id
+	join player_info pi on pi.player_id = gss.player_id
+	group by gss.player_id, pi.firstName, pi.lastName, year(g.date_time_GMT)
+)
+select player_id, firstName, lastName
+from tab t1
+where not exists (
+	select 1
+	from tab t2
+	where t1.player_id = t2.player_id and t2.player_year_goals < 15
+)
+group by player_id, firstName, lastName
+
+-- 2
+-- Pro každého hráče z česka (player_info.nationality) hrajícího levé křídlo (player_info.primaryPosition = LW), vypište následující údaje
+-- 1. Počet nastřílených gólů v zápasech roku 2010
+-- 2. Počet různých měsíců ve kterých v roce 2010 hrál. (vyuřijte funkci Month(game.date_time_GMT))
+-- 3. Id hráče
+-- 4. Jméno a příjmení
+-- Zařaďte do výsledku pouze hráče, kteří v roce 2010 hráli alespoň v jednom zápase
+select pi.player_id, pi.firstName,  pi.lastname, count(distinct month(g.date_time_GMT)), sum(gss.goals)
+from player_info pi
+join game_skater_stats gss on pi.player_id = gss.player_id
+join game g on gss.game_id = g.game_id
+where year(g.date_time_GMT) = 2010 and pi.primaryPosition = 'LW' and pi.nationality = 'CZE'
+group by pi.player_id, pi.firstName,  pi.lastname
+
+-- 3
+-- Nalezněte zápasy v United Center (game.venue), kde všichni hráči ve hře vystřelili alespoň jednou na bránu (game_skater_stats.shots).
+-- Vynechte zápasy, které nemají v tabulce game_skater_stats žádné záznamy.
+-- Vypište datum zápasu, místo (venue), jména týmů v zápase a Výsledné skóre zápasu (game.away_goals a game.home_goals).
+select g.venue, ti1.teamName awayTeam, ti2.teamName homeTeam, g.away_goals awayGoals, g.home_goals homeGoals
+from game g
+join team_info ti1 on g.away_team_id = ti1.team_id
+join team_info ti2 on g.home_team_id = ti2.team_id
+join game_skater_stats gss on gss.game_id = g.game_id
+where not exists (
+	select 1
+	from game_skater_stats gss
+	where gss.game_id = g.game_id and gss.shots = 0
+)
+group by g.venue, ti1.teamName , ti2.teamName , g.away_goals , g.home_goals 
+go
+
+-------------------------------------------------- B
+
+-- 1
+-- Vypište jména hráčů, kteří v každém roce ve kterém hráli minimálně jeden zápas nastříleli alespoň 15 gólů.
+with tab as (
+	select gss.player_id, pi.firstName, pi.lastName, year(g.date_time_GMT) playyear, sum(gss.goals) player_year_goals
+	from game_skater_stats gss
+	join game g on g.game_id = gss.game_id
+	join player_info pi on pi.player_id = gss.player_id
+	group by gss.player_id, pi.firstName, pi.lastName, year(g.date_time_GMT)
+)
+select player_id, firstName, lastName
+from tab t1
+where not exists (
+	select 1
+	from tab t2
+	where t1.player_id = t2.player_id and t2.player_year_goals < 15
+)
+group by player_id, firstName, lastName
+
+-- 2
+-- Pro každého hráče ze Švédska (player_info.nationality) hrajícího obranu (player_info.primaryPosition = D) vypište následující údaje:
+-- 1. Kolikrát byl hráč trestán za sekání (game_plays.secondaryType = 'Slashing')
+-- 2. Počet různých mměsíců ve kterých v roce 2011 hrál. (využijte funkci Month(game.date_time_GMT))
+-- Zařaďte do výsledku pouze hráče, kteří v roce 2011 hráli v alespoň jednom zápase.
+select distinct pi.player_id, pi.firstName,  pi.lastname, 
+(
+	select count(*)
+	from game_plays_players gpp
+	join game_plays gp on gpp.play_id = gp.play_id
+	where pi.player_id = gpp.player_id and secondaryType = 'Slashing'
+),
+(
+	select count(distinct month(g.date_time_GMT))
+	from game_skater_stats gss 
+	join game g on gss.game_id = g.game_id
+	where year(g.date_time_GMT) = 2011 and pi.player_id = gss.player_id 
+)
+from player_info pi
+join game_skater_stats gss on pi.player_id = gss.player_id
+join game g on gss.game_id = g.game_id
+where year(g.date_time_GMT) = 2011 and pi.primaryPosition = 'D' and pi.nationality = 'SWE'
+
+
+
+-- 3
+-- Nalezněte zápasy odehrané v TD Garder (game.venue), kde kde všichni hráči ve hře měli minimálně jednu minutu vyloučení(game_skater_stats.penaltyMinutes).
+-- Vynechte zápasy, kde nemáme v game_skater_stats žádné statisitky.
+-- Vypište datum zápasu, místo (venue), jména týmů v zápase a výsledné skóre zápasu (game.away_goals a game.home_goals).
+select g.game_id, g.venue, ti1.teamName awayTeam, ti2.teamName homeTeam, g.away_goals awayGoals, g.home_goals homeGoals
+from game g
+join team_info ti1 on g.away_team_id = ti1.team_id
+join team_info ti2 on g.home_team_id = ti2.team_id
+join game_skater_stats gss on gss.game_id = g.game_id
+where not exists (
+	select 1
+	from game_skater_stats gss
+	join player_info pi on pi.player_id = gss.player_id
+	where gss.game_id = g.game_id and gss.penaltyMinutes = 0 
+) and venue = 'TD Garden'
+group by g.game_id, g.venue, ti1.teamName, ti2.teamName, g.away_goals, g.home_goals 

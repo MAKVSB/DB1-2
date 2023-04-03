@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34E9F2F2-FA8D-397D-799D-E5CDEDB0AC71" name="comment">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>2842858B-E9B5-F954-EF25-A166D26A4B93</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="commentId" id="D5C5A30D-73EA-85B6-83A7-80E7684F3F3F">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>D9BCD9C2-BE8B-A34F-6800-6448B992ECED</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anime_animeId" id="7954DDFE-9F9C-E007-6C10-155FBD3CDA36">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>CEAAC425-A4B7-CBC2-12A0-61CAED6E0CF6</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0871F01F-7E06-BED3-6BAE-A54EFE7825AC" referredColumn="F3950B8E-DDBB-FDFE-49B8-C746D67932CD"/>
+</associations>
+</Column>
+<Column name="user_userId" id="81F2DC0B-D20C-E774-45BA-F2DED499C3C6">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>18682465-CD10-61F2-9B87-F52D2FB262B5</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A1A9130-BB02-77C2-BF5C-D9036E280EF8" referredColumn="55D5FF44-2256-FF3D-A0B8-AE6261764C83"/>
+</associations>
+</Column>
+<Column name="text" id="C27BBEB1-E96B-B8D6-71A4-38B8B90EE578">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>81021DE5-4532-D2DE-717C-1E738A556F77</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="6D71D428-AEDB-9E9E-BDD6-6D8650941585">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>3CB9C64B-4574-375C-C260-A79BB9C056E7</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hiddenBy" id="FE859D99-790C-7199-CF9F-499AA1A091E5">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>7C7B90B4-4C8A-810C-F8B6-CF8773BB3925</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created" id="875DC78E-C017-22DA-0A00-74D089B248D0">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>59D92A69-AEEF-628B-F1B3-6194FFA8AC80</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated" id="89829BFE-90B8-3951-CF9D-0038004218DA">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>9CC0BDDE-1653-D788-17B5-1037AB9A4CC3</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment_commentId" id="786EFD9C-6E5B-81B3-E604-1CBCBB2CFA9E">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>303EDB43-5D68-6724-7066-FA5D732B5A7C</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E59AE129-7E63-D310-68F3-D010A309B47C" referredColumn="D5C5A30D-73EA-85B6-83A7-80E7684F3F3F"/>
+</associations>
+</Column>
+<Column name="inReplyTo" id="5E260FCA-55B8-6EF0-8222-224B1338982A">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>DB4463C2-AF71-7DE4-B6BC-AD5D8310C573</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EA644BB-68AA-DEB7-7206-DA8860B90D9B" name="comment_PK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>DD77B7FE-69D3-09FE-B72D-9B31080FB6DC</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5C5A30D-73EA-85B6-83A7-80E7684F3F3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CB3D707-77AE-9C67-83F3-9FA53DFD353C" name="comment_anime_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>E5473A27-BB02-DA81-E131-CA650FFD29B7</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7954DDFE-9F9C-E007-6C10-155FBD3CDA36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63B814B7-EB0B-38BC-F2CE-B688A9A54419" name="comment_comment_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>1339264E-1167-E4EF-4B7A-90C512F4FBC3</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="786EFD9C-6E5B-81B3-E604-1CBCBB2CFA9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B034FAB4-CFDC-D605-0EF0-4974EBFF25C6" name="comment_user_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:40:30 UTC</createdTime>
+<generatorID>C625DA55-5F3E-B409-23D1-B354A9D855CD</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81F2DC0B-D20C-E774-45BA-F2DED499C3C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

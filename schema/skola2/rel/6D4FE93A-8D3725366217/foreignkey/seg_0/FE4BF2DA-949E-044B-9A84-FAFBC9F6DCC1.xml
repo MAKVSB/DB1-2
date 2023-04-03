@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE4BF2DA-949E-044B-9A84-FAFBC9F6DCC1" containerWithKeyObject="5A3B5A8A-57F0-7CE4-3178-4C96438BBF03" localFKIndex="A08629F3-0F15-8A9A-963E-AFE94440C4CE" name="like_anime_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:46:24 UTC</createdTime>
+<generatorID>5C7795F1-0526-8F85-E487-979774DF748A</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<referredTableLongName>anime</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88E49E9B-31FC-55C5-B23A-D5DBA89A0A28</referredTableID>
+<keyObject>64A57B80-CA76-E429-52E5-0B243D95F183</keyObject>
+<referredKeyID>64A57B80-CA76-E429-52E5-0B243D95F183</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>animeId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
