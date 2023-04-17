@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDEC9BD2-9EEC-4827-F363-4FC86A24EC7B" name="source">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>049DC9DE-3E64-75EF-9DF0-54DDA9DFB3B2</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sourceId" id="2F70A7CF-7E9B-F3F0-F08C-9C415A50FA95">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>9FD7A374-5A23-EEE8-2614-004250FFC7DF</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="4055E32F-7BF5-B8D3-ADE8-81B49DECD14A">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>D1D3765F-FE76-B3D3-D5A5-4231A537E122</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="url" id="5BFA7DE2-99EA-6E6C-000B-D64EF4C5BEB2">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>63637822-00A6-CAD4-EB17-9E4CD0DB7E61</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addDate" id="9F9C3E74-E134-E7F0-9CB5-BCC398CCF665">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>EBE32003-901C-CBFB-8705-CF386C7F605F</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastVerifyDate" id="0941D4FF-1525-95C7-19E2-52D76318CA98">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>4D9B0181-7119-8E11-B02F-6FA5346F63A2</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quality" id="C6E5D4B8-F4F5-0F05-BD3E-1167D4327BAD">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>6593D4BA-C76B-2E62-F26D-E0D366BFD0B5</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created" id="7723C2DD-354C-1044-0B3E-AA5BA3D14B3B">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>ED4E9C3D-429F-ED5D-BB71-0F6A70C8445F</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated" id="28D0321D-D028-52F5-06E4-2232EDA68117">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>5F73576F-1720-2550-DF67-7D502A19B5AE</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="external" id="F8BC917B-06B9-D815-F2B9-8C9855EBC9DB">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>85057874-E6C4-9D1E-08B9-C40BB2FD70F7</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="paymentRequired" id="5D037A27-AFBE-7020-2063-00AA1CE7F1B4">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>84789594-17E0-9673-716A-8585E7F33840</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="language" id="170C4D47-2BA8-FBA8-9017-4ED9FDBEB452">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>80F380BA-2D0B-FDF0-4C7A-C50FCC754F93</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtitles" id="E804B6A7-54DA-ED73-285A-DE1734217B91">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>3012245F-398E-A06E-35F2-BC6654E15D35</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animeId" id="3FC24DE8-A631-A360-725D-FB9D3E2A3210">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>42D2C9B0-8816-11C9-FAFE-C81784B25853</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92EFF679-F537-CF60-EA22-41ABEC617B99" referredColumn="5D8E5EF9-758C-E98C-D742-54BB97348C1C"/>
+</associations>
+</Column>
+<Column name="deletedAt" id="AA3387E5-E5B9-1703-4DA4-2C849A44C18C">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>85E1BA95-F2C4-BFB8-C99F-555FCD09D048</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDD5AB70-1B8D-3583-ADB7-AFC24B5DFA15" name="source_PK">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:42 UTC</createdTime>
+<generatorID>11C8E502-2687-68A4-6565-0AFCC13CAA04</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F70A7CF-7E9B-F3F0-F08C-9C415A50FA95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFBFD9F4-D530-2B41-8B61-1E56FD54331F" name="source_anime_FK">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-04-01 18:31:43 UTC</createdTime>
+<generatorID>5C72FF93-7FC4-10C0-EB66-BE09D7FB4172</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FC24DE8-A631-A360-725D-FB9D3E2A3210"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

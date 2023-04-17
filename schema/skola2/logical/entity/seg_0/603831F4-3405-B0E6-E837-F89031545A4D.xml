@@ -1,0 +1,219 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="603831F4-3405-B0E6-E837-F89031545A4D" name="author">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>E4CA9161-5397-4F43-E39E-FC5C8388ADA7</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="authorId" id="82800DD1-80F2-1C5A-9BA2-847A33AE77B3">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>4DB2A1CC-020C-AD39-E2DB-8AB8E1AA6541</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="firstName" id="C0D57968-682B-39EE-4B20-A02FEC4A9191">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>20DC67C7-9C7E-9D6D-0853-B0091F3B38EF</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lastName" id="99250358-D228-2484-F031-751F765B669D">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>E7FD19AD-BF5D-CE81-F028-E618F414D1F3</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="authorName" id="6E09ADEE-1AA3-6769-6E0A-B6DC21018D6B">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>32B6C755-657C-5C6A-4593-C3BEDCF86233</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birthDate" id="39F31D76-E4F1-E2C4-F13D-DFECCEDDCE95">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>C3A02CFA-CC04-0886-4AF7-705BFE22B026</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bibliography" id="E7E43DD8-4407-736D-32B9-6447CD5A8370">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>8F252B5A-7572-90AC-B571-D6A34A699E43</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="photoUrl" id="E362D7D0-3622-4FAC-FD0A-9FEF9328400A">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>A2C608B0-77EC-B7A5-045A-BD2482391A4C</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="4C12F35E-CBF0-D099-869C-9CB8953F5084">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>0D1E4578-ACD1-59CC-E20D-5CF68CCD43E3</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created" id="13A71D04-FE89-B4D9-D34A-431E265A94E9">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>85A7E8D0-99C7-3625-E3A0-89E08C3F46B6</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="updated" id="A8E9D5D1-5927-8467-A7C1-701B9075ECD8">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>21708D8C-1D5C-BB3C-7F4F-125A97FC9204</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prefferedStyle" id="D99CB415-35E0-D54E-9A7C-DB40A5BDC47E">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>F4FE4CE5-C971-2221-A800-AE23D17A9C7C</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="deletedAt" id="E1B0914B-4776-5334-3CC2-9B861013A1E7">
+<createdBy>Zakk</createdBy>
+<createdTime>2023-03-19 08:23:03 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF005512-9144-CD40-A03A-E6533B16D2D7" name="author PK">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>E7B74A16-B1B3-CBAB-DB11-158686A9F1EE</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="false"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>82800DD1-80F2-1C5A-9BA2-847A33AE77B3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
