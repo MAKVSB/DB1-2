@@ -1,0 +1,7 @@
+COALESCE(COUNT(*), 0)
+
+alter table xxxxx
+add aggressivity int check aggressivity in (0,1,2));
+
+alter table xxxxx
+add aggressivity integer constraint aggressivity_constraint CHECK (aggressivity IS (0,1,2));
