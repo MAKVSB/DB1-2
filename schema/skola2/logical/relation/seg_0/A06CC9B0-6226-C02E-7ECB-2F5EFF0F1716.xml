@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="view_anime_FK" directorySegmentName="seg_0" id="A06CC9B0-6226-C02E-7ECB-2F5EFF0F1716">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>84F2F712-7972-FD40-B77A-490A42A64D97</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<sourcePk>0C1E7396-A6EA-6269-EE7E-E3F2359A31F0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FBAB745A-DFF0-7600-52D4-0BDE349E6BC4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B5D9F76E-36CA-F9AC-EF88-F8FC3527FE3E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="anime_author" directorySegmentName="seg_0" id="F5E25080-FDAD-C7A5-EB17-A1239DB9BCAE">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:35 UTC</createdTime>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>authorId</nameOnSource>
+<nameOnTarget>authorId</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>FBAB745A-DFF0-7600-52D4-0BDE349E6BC4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>603831F4-3405-B0E6-E837-F89031545A4D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
