@@ -105,6 +105,7 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<<<<<<< HEAD
 <Attribute name="finished" id="609EFC95-B173-01A1-792F-F1ACA959613D">
 <createdBy>Zakk</createdBy>
 <createdTime>2023-04-01 18:41:15 UTC</createdTime>
@@ -120,6 +121,8 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+=======
+>>>>>>> 9de035a3b9ebd7c5f92ca8dac0b81b81f2806e20
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="EBF4A811-4EF1-DA41-91D9-E1946715A2AB" name="request PK">

@@ -179,8 +179,14 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<<<<<<< HEAD
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+=======
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+>>>>>>> 9de035a3b9ebd7c5f92ca8dac0b81b81f2806e20
 </Attribute>
 <Attribute name="registeredDate" id="0F27DBB6-0537-119D-F60D-F858B311956B">
 <createdBy>Zakk</createdBy>
@@ -295,9 +301,14 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<<<<<<< HEAD
 <logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
+=======
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+>>>>>>> 9de035a3b9ebd7c5f92ca8dac0b81b81f2806e20
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

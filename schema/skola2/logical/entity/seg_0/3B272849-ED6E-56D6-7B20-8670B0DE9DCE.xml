@@ -134,7 +134,11 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<<<<<<< HEAD
 <Attribute name="inReplyTo" id="FF376C52-B5A1-E7FD-D450-99AEAA22084B">
+=======
+<Attribute name="inReplyTo1" id="FF376C52-B5A1-E7FD-D450-99AEAA22084B">
+>>>>>>> 9de035a3b9ebd7c5f92ca8dac0b81b81f2806e20
 <createdBy>Zakk</createdBy>
 <createdTime>2022-11-12 15:45:28 UTC</createdTime>
 <generatorID>C718963F-2F36-84E9-809A-D38D0D7650D3</generatorID>
@@ -150,6 +154,23 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<<<<<<< HEAD
+=======
+<Attribute name="inReplyTo" id="A469B159-80CC-E34C-3B7D-68F474C83EAF">
+<createdBy>Zakk</createdBy>
+<createdTime>2022-11-12 15:45:28 UTC</createdTime>
+<generatorID>5E260FCA-55B8-6EF0-8222-224B1338982A</generatorID>
+<ownerDesignName>skola2</ownerDesignName>
+<engineerTo>
+<item key="75167EBF-5DAE-A93A-ED45-8048C304CAD5" value="true"/>
+<item key="6D4FE93A-A484-2742-E49F-8D3725366217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+>>>>>>> 9de035a3b9ebd7c5f92ca8dac0b81b81f2806e20
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6AB95182-87CF-31A9-9E6C-A12EDA0C7961" name="comment PK">
