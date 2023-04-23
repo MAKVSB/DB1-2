@@ -1,0 +1,102 @@
+create or replace TRIGGER T_Update_Game BEFORE UPDATE ON Game FOR EACH ROW
+DECLARE
+    v_homeTeamChange INT;
+    v_awayTeamChange INT;
+BEGIN
+    IF :new.AWAY_GOALS = :old.AWAY_GOALS OR :new.HOME_GOALS = :old.HOME_GOALS THEN
+        -- kolik gólů přibylo
+        v_awayTeamChange := :new.AWAY_GOALS - :old.AWAY_GOALS;
+        v_homeTeamChange := :new.HOME_GOALS - :old.HOME_GOALS;
+        PPrint(v_homeTeamChange);
+        PPrint(v_awayTeamChange);
+    
+    
+        -- aktualizace gólů v GAME_TEAMS_STATS
+        UPDATE GAME_TEAMS_STATS SET GAME_TEAMS_STATS.GOALS = GOALS + v_homeTeamChange WHERE TEAM_ID = :new.HOME_TEAM_ID AND GAME_ID = :new.GAME_ID;
+        UPDATE GAME_TEAMS_STATS SET GAME_TEAMS_STATS.GOALS = GOALS + v_awayTeamChange WHERE TEAM_ID = :new.AWAY_TEAM_ID AND GAME_ID = :new.GAME_ID;
+        
+        -- aktualizace výsledku
+        IF :new.AWAY_GOALS > :new.HOME_GOALS THEN
+            :new.outcome := 'away win';
+        ELSIF :new.AWAY_GOALS < :new.HOME_GOALS THEN
+            :new.outcome := 'home win';
+        ELSE
+            :new.outcome := 'draw';
+        END IF;
+    END IF;
+END;
+
+
+BEGIN
+    SELECT * FROM GAME WHERE GAME_ID = 2000020008;
+    SELECT * FROM GAME_TEAMS_STATS WHERE GAME_ID = 2000020008 AND TEAM_ID = 26;
+    SELECT * FROM GAME_TEAMS_STATS WHERE GAME_ID = 2000020008 AND TEAM_ID = 15;
+    
+    UPDATE GAME SET HOME_GOALS = 5 WHERE GAME_ID = 2000020008;
+END;
+
+
+
+create or replace FUNCTION F_Export_Game_Stats(p_game_id GAME.GAME_ID%TYPE) return VARCHAR AS
+    v_result CLOB;
+    v_last_position PLAYER_INFO.PRIMARYPOSITION%type;
+    v_first INT := 1;
+BEGIN
+    v_result := '<game id="' || p_game_id || '">' || chr(13) || chr(10);
+    v_result := v_result || '   <players>' || chr(13) || chr(10);
+    
+    FOR c_player in (
+        SELECT firstname, lastname, goals, PRIMARYPOSITION
+        FROM GAME_SKATER_STATS
+            LEFT JOIN PLAYER_INFO ON PLAYER_INFO.PLAYER_ID = GAME_SKATER_STATS.PLAYER_ID
+        WHERE GAME_SKATER_STATS.GAME_id = 2000020059
+        ORDER BY PLAYER_INFO.PRIMARYPOSITION
+    ) LOOP
+        IF v_first = 1 THEN
+            v_result := v_result || '       <' || c_player.PRIMARYPOSITION || '>' || chr(13) || chr(10);
+            v_last_position := c_player.PRIMARYPOSITION;
+            v_first := 0;
+        END IF;
+        IF c_player.PRIMARYPOSITION != v_last_position THEN
+            v_result := v_result || '       </' || v_last_position || '>' || chr(13) || chr(10);
+            v_last_position := c_player.PRIMARYPOSITION;
+            v_result := v_result || '       <' || v_last_position || '>' || chr(13) || chr(10);
+        END IF;
+        v_result := v_result || '           <player>' || chr(13) || chr(10);
+        v_result := v_result || '               <first_name>' || c_player.firstname || '</first_name>' || chr(13) || chr(10);
+        v_result := v_result || '               <last_name>' || c_player.lastname || '</last_name>' || chr(13) || chr(10);
+        v_result := v_result || '               <goals>' || c_player.goals || '</goals>' || chr(13) || chr(10);
+        v_result := v_result || '           </player>' || chr(13) || chr(10);
+    
+    
+    END LOOP;
+    v_result := v_result || '       </' || v_last_position || '>' || chr(13) || chr(10);
+    v_result := v_result || '   </players>' || chr(13) || chr(10);
+    v_result := v_result || '</game>';
+    return v_result;
+END;
+
+
+BEGIN
+    PPrint(F_Export_Game_Stats(2000020059));
+END;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
