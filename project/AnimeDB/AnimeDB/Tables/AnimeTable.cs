@@ -239,7 +239,7 @@ namespace AnimeDB.Tables
             Collection<Anime> animes = new Collection<Anime>();
 
             while (reader.Read())
-            {
+            {                
                 Anime anime = new Anime();
                 anime.Id = reader.GetInt32(reader.GetOrdinal("animeId"));
                 anime.Name = reader.GetString(reader.GetOrdinal("name"));
