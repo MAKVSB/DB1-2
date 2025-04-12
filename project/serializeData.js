@@ -136,11 +136,24 @@ var stateName = ['Qassem State', 'North State', 'East State', 'South State', 'We
 var zipCode = ['28889', '96459', '35748', '15005', '99625', '71465'];
 
 function getRandomAddress(city) {
-    return [getRandomElement(streetNumber), ' ', getRandomElement(streetName), ', ', city, ' ', getRandomElement(stateName), ', ', getRandomElement(zipCode)].join();
+    return [
+        getRandomElement(streetNumber),
+        ' ',
+        getRandomElement(streetName),
+        ', ',
+        city,
+        ' ',
+        getRandomElement(stateName),
+        ', ',
+        getRandomElement(zipCode)
+    ].join();
 }
+
 function getRandomElement(array) {
-  if (array instanceof Array) return array[Math.floor(Math.random() * array.length)];
-  else return array;
+    if (array instanceof Array) 
+        return array[Math.floor(Math.random() * array.length)];
+    else 
+        return array;
 }
 
 function parseUser(userData){
@@ -179,7 +192,6 @@ function parseReviews(reviews, animeId){
                 created: 'getdate()',
                 updated: 'getdate()',
             });
-  
         }
     }
 }
@@ -211,97 +223,16 @@ for (let index = 10; index < 12; index++) {
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 let finalstrings = [];
-// WORKING
-// users.forEach((values,keys)=>{
-// finalstrings.push(`INSERT INTO proj_user
-// (userId, firstName, lastName, email, password, address, city, photoUrl, language, role, paid, registeredDate, updated, lastLogin, emailNotifications, emailMarketing) 
-// values 
-// (${values.userId}, '${values.firstName}', '${values.lastName}', '${values.email}', '${values.password}', '${values.address}', '${values.city}', '${values.photoUrl}', '${values.language}', ${values.role}, ${values.paid}, ${values.registeredDate}, ${values.updated}, ${values.lastLogin}, ${values.emailNotifications ? 1 : 0}, ${values.emailMarketing ? 1 : 0})
-
-// go
-// `);
-// })   
-    
-// authors.forEach((values,keys)=>{
-// finalstrings.push(`INSERT INTO proj_author
-// (authorId, firstName, lastName, authorName, birthDate, bibliography, photoUrl, type, created, updated, prefferedStyle) 
-// values 
-// (${values.authorId}, '${values.firstName}', '${values.lastName}', '${values.authorName}', getdate(), '${values.bibliography}', '${values.photoUrl}', '${values.type}', ${values.created}, ${values.updated}, '${values.prefferedStyle}')
-
-// go
-// `);
-// })   
-
-// animes.forEach((values,keys)=>{
-// finalstrings.push(`INSERT INTO proj_anime
-// (animeId, name, length, episodeNumber, seriesNumber, "desc", shortDesc, created, updated, viewCount, language) 
-// values 
-// (${values.animeId}, '${values.name}', ${values.length}, ${values.episodeNumber}, ${values.seriesNumber}, '${values.desc.replaceAll('\'', '').slice(0, 490)}', '${values.shortDesc.replaceAll('\'', '').slice(0, 98)}', ${values.created}, ${values.updated}, ${values.viewCount}, '${values.language}')
-
-// go
-// `);
-// })
-
-// staffAnimeReference.forEach((values,keys)=>{
-// finalstrings.push(`INSERT INTO proj_anime_author
-// (animeId, authorId) 
-// values 
-// (${values.animeId}, ${values.authorId})
-
-// go
-// `);
-// })  
-
-// let lastId = 1;
-// sources.forEach((values,keys)=>{
-// finalstrings.push(`INSERT INTO proj_source 
-// (sourceId, animeId, name, url, addDate, lastVerifyDate, quality, created, updated, "external", paymentRequired, language, subtitles) 
-// values 
-// (${lastId},${values.animeId}, '${values.name}', '${values.url}', ${values.addDate}, ${values.lastVerifyDate}, '${values.quality}', ${values.created}, ${values.updated}, ${values.external ? 1 : 0}, ${values.paymentRequired ? 1 : 0}, '${values.language}', '${values.subtitles}')
-
-// go
-// `);
-// lastId++;
-// })
-
-// comments.forEach((values,keys)=>{
-// finalstrings.push(`INSERT INTO proj_comment
-// (commentId, animeId, userId, text, rating, created, updated) 
-// values 
-// (${values.commentId}, ${values.animeId}, ${values.userId}, '${values.text.replaceAll("'", "''").slice(0,2999)}', ${values.rating}, ${values.created}, ${values.updated})
-
-// go
-// `);
-// })   
 
 subepisodesMap.forEach((values,keys)=>{
-finalstrings.push(`INSERT INTO proj_anime
-(animeId, name, length, episodeNumber, seriesNumber, "desc", shortDesc, created, updated, viewCount, language) 
-values 
-(${values.animeId}, '${values.name}', ${values.length}, ${values.episodeNumber}, ${values.seriesNumber}, '${values.desc.replaceAll('\'', '').slice(0, 490)}', '${values.shortDesc.replaceAll('\'', '').slice(0, 98)}', ${values.created}, ${values.updated}, ${values.viewCount}, '${values.language}')
+    finalstrings.push(`INSERT INTO proj_anime
+    (animeId, name, length, episodeNumber, seriesNumber, "desc", shortDesc, created, updated, viewCount, language) 
+    values 
+    (${values.animeId}, '${values.name}', ${values.length}, ${values.episodeNumber}, ${values.seriesNumber}, '${values.desc.replaceAll('\'', '').slice(0, 490)}', '${values.shortDesc.replaceAll('\'', '').slice(0, 98)}', ${values.created}, ${values.updated}, ${values.viewCount}, '${values.language}')
 
-go
-`);
+    go
+    `);
 })
 
-
-
-
-// TODO
-// const animeEpisodes = new Map();
-
-fs.writeFileSync('skript_data2.sql', finalstrings.join(''));
+fs.writeFileSync('Skript_Data.sql', finalstrings.join(''));
